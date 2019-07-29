@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        RhymeBot
+    </title>
+</head>
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+<body>
+    <form method="POST" action="/rhymecheck">
+        <h1 align="center"><a href="main.html"> RhymeBot  </a></h1>
+        <h3 align="center"> Rhyme 여부를 알고 싶은 두 단어를 입력하세요. </br></h3>
+        <input align="center" type="text" name="word1" >
+        <input align="center" type="text" name="word2" ></br>
+        <button type="submit">확인하기</button>
+    </form>
+      <p>
+          <h5 align="center"> {{word1}} </h5>
+          <h5 align="center"> {{val}} </h5>
+          <h5 align="center"> {{bool}} </h5>
+      </p>
+</body>
+</html>
