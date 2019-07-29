@@ -1,1 +1,1 @@
-web: gunicorn RhymeBot:app
+web: gunicorn app:app
